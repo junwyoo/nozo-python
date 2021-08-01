@@ -45,7 +45,7 @@ with open(DIRNAME + "/" + member_list_file_name, newline='', encoding='utf-8') a
     print("members with name: ", len(member_list))
     print("members without name: ", noname_count)
 
-with open(DIRNAME + transaction_file_name, newline='', encoding='utf-8') as transactions_csv:
+with open(DIRNAME + "/" + transaction_file_name, newline='', encoding='utf-8') as transactions_csv:
     transaction_reader = csv.reader(transactions_csv)
     total_count = 0
 
