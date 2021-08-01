@@ -78,7 +78,7 @@ with open(DIRNAME + "/" + transaction_file_name, newline='', encoding='utf-8') a
 
     print("Total:", total_count, "| Paid Enough:", len(paid_list), "| Paid Excessive:", len(paid_excessively))
 
-with open(DIRNAME + output_file_name, 'w', encoding='utf-8') as fd:
+with open(DIRNAME + "/" + output_file_name, 'w', encoding='utf-8') as fd:
     not_in_list_count = 0
     in_list_count = 0
     dup_found_count = 0
